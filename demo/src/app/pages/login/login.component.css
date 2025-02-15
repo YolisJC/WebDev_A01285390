@@ -1,0 +1,113 @@
+body {
+    background-color: #003366;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.login-container {
+    width: 100%;
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #514c4c;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color:#f1f1f1
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f4eeee;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #c6c3c3;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #888383;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  small {
+    color: #b6392c;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+    padding: 5px; 
+    background-color: #f8d7da;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  .login-message p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 400px) {
+    .login-container {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    input, button {
+      padding: 10px;
+    }
+  }
+  
