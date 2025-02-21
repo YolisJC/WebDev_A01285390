@@ -16,6 +16,14 @@ export class HeaderComponent {
     return !!localStorage.getItem('authToken');
   }
 
+  profile() {
+    this.router.navigate(['/profile']);
+  }
+
+  dashboard() {
+    this.router.navigate(['/dashboard']);
+  }
+
   logout() {
     localStorage.removeItem('authToken');
     this.router.navigate(['/login']);

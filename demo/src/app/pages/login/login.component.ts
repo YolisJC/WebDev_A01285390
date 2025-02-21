@@ -29,7 +29,7 @@ export class LoginComponent {
 
       if (this.authService.login(email, password)) {
         this.loginMessage = 'Usuario y contraseña correctos';
-        this.router.navigate(['/home']);
+        this.router.navigate(['/dashboard']);
       } else {
         this.loginMessage = 'Correo o contraseña incorrectos';
       }
