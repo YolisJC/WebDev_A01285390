@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Pokémones</h1>
+
+    <label for="ability-select"> Seleccionar habilidad</label>
+    <select id="ability-select" (change)="onAbilityChange($event)">
+        <option *ngFor="let ability of habilidadesDisponibles" [value]="ability.name">
+            {{ ability.label }}
+          </option>          
+    </select>
+    <p *ngIf="abilities.length === 0">Cargando datos...</p>
+  
+    <div class="cards">
+        <div *ngFor="let poke of abilities" class="card">
+            <h3>{{ poke.nombre | titlecase }}</h3>
+        <a [href]="poke.url" target="_blank">
+          <img [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/' + getPokemonId(poke.url) + '.png'"
+               alt="{{ poke.nombre }}">
+        </a>
+        <p>ID: {{ getPokemonId(poke.url) }}</p>
+      </div>
+    </div>
+  </div>
+  

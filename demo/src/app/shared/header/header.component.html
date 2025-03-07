@@ -5,6 +5,7 @@
   <ul class="nav-links">
     <li><a (click)="dashboard()" *ngIf="isLoggedIn()">Dashboard</a></li>
     <li><a (click)="profile()" *ngIf="isLoggedIn()">Profile</a></li>
+    <li><a (click)="cards()" *ngIf="isLoggedIn()">Cards - API</a></li>
     <li><a (click)="logout()" *ngIf="isLoggedIn()">Logout</a></li>
     <li><a routerLink="/login" *ngIf="!isLoggedIn()">Login</a></li>
   </ul>

@@ -24,6 +24,10 @@ export class HeaderComponent {
     this.router.navigate(['/dashboard']);
   }
 
+  cards() {
+    this.router.navigate(['/cards']);
+  }
+
   logout() {
     localStorage.removeItem('authToken');
     this.router.navigate(['/login']);

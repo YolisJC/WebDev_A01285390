@@ -5,6 +5,8 @@ import { AuthGuard } from './guards/auth.guard';
 import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { CardsComponent } from './pages/cards/cards.component';
+
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },  //login
@@ -17,6 +19,11 @@ export const routes: Routes = [
   { 
     path: 'profile', 
     component: ProfileComponent, 
+    canActivate: [AuthGuard] //perfil protegido
+  },
+  { 
+    path: 'cards', 
+    component: CardsComponent, 
     canActivate: [AuthGuard] //perfil protegido
   },
   { path: '', redirectTo: 'login', pathMatch: 'full' } 
